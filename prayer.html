@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer Times — Noor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="pattern" data-page="prayer">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">ن</div>
+        <div class="logo-text">
+          <strong>Noor</strong>
+          <span>Light of Guidance</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="quran.html" data-page="quran">Quran</a>
+        <a href="prayer.html" data-page="prayer">Prayer Times</a>
+        <a href="hadith.html" data-page="hadith">Hadith</a>
+        <a href="about.html" data-page="about">About Islam</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="bismillah">حَيَّ عَلَى الصَّلَاة</p>
+      <h1>Prayer Times</h1>
+      <p>Enter your city or use your location to see today’s salah times.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="toolbar">
+          <input id="city" type="text" placeholder="City" value="Karachi" />
+          <input id="country" type="text" placeholder="Country" value="Pakistan" />
+          <button class="btn btn-gold" id="load-city" type="button">Get times</button>
+          <button class="btn btn-outline" id="use-location" type="button" style="color: var(--green-800); border-color: var(--green-700)">Use my location</button>
+        </div>
+        <p class="status" id="prayer-status">Loading prayer times…</p>
+        <div class="prayer-grid" id="prayer-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Times are calculated using the Aladhan API (Muslim World League method).</p>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+  <script src="js/prayer.js"></script>
+</body>
+</html>

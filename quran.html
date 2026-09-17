@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quran — Noor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="pattern" data-page="quran">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">ن</div>
+        <div class="logo-text">
+          <strong>Noor</strong>
+          <span>Light of Guidance</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="quran.html" data-page="quran">Quran</a>
+        <a href="prayer.html" data-page="prayer">Prayer Times</a>
+        <a href="hadith.html" data-page="hadith">Hadith</a>
+        <a href="about.html" data-page="about">About Islam</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="bismillah">الْقُرْآنُ الْكَرِيمُ</p>
+      <h1>The Noble Quran</h1>
+      <p>Search a surah, then read Arabic with Sahih International English translation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="search-bar">
+        <input id="surah-search" type="search" placeholder="Search by name or number…" />
+        <button class="btn btn-gold" id="back-list" type="button" hidden>All surahs</button>
+      </div>
+      <p class="status" id="quran-status">Loading surahs…</p>
+      <div class="surah-list" id="surah-list"></div>
+      <article class="card reader" id="reader">
+        <h2 id="reader-title"></h2>
+        <p class="muted" id="reader-meta"></p>
+        <div id="ayahs"></div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>May Allah make the Quran the spring of our hearts.</p>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+  <script src="js/quran.js"></script>
+</body>
+</html>

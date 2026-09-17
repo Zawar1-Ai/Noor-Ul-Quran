@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadith — Noor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="pattern" data-page="hadith">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">ن</div>
+        <div class="logo-text">
+          <strong>Noor</strong>
+          <span>Light of Guidance</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="quran.html" data-page="quran">Quran</a>
+        <a href="prayer.html" data-page="prayer">Prayer Times</a>
+        <a href="hadith.html" data-page="hadith">Hadith</a>
+        <a href="about.html" data-page="about">About Islam</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="bismillah">الْحَدِيثُ الشَّرِيفُ</p>
+      <h1>Selected Hadith</h1>
+      <p>Short, well-known sayings of Prophet Muhammad ﷺ for daily reflection.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="btn-row" style="margin-bottom: 1.4rem">
+        <button class="btn btn-gold" id="random-hadith" type="button">Show another hadith</button>
+      </div>
+      <article class="card" id="hadith-featured"></article>
+      <div class="grid-2" id="hadith-list" style="margin-top: 1.4rem"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>These are widely reported narrations for learning. Always refer to scholars for detailed study.</p>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+  <script src="js/hadith.js"></script>
+</body>
+</html>

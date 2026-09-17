@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor — Islamic Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="pattern" data-page="home">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">ن</div>
+        <div class="logo-text">
+          <strong>Noor</strong>
+          <span>Light of Guidance</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="quran.html" data-page="quran">Quran</a>
+        <a href="prayer.html" data-page="prayer">Prayer Times</a>
+        <a href="hadith.html" data-page="hadith">Hadith</a>
+        <a href="about.html" data-page="about">About Islam</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <h1>Peace, knowledge, and light</h1>
+      <p>A calm space to read the Quran, follow prayer times, and learn the beautiful teachings of Islam.</p>
+      <div class="hero-meta">
+        <span class="chip" id="hijri-date">Loading Hijri date…</span>
+        <span class="chip" id="greg-date"></span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="quran.html">Read the Quran</a>
+        <a class="btn btn-outline" href="prayer.html">Today’s prayers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>A verse for today</h2>
+        <div class="ornament"></div>
+      </div>
+      <article class="card ayah-card" id="daily-ayah">
+        <p class="ayah-ar">اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ</p>
+        <p class="ayah-en">“Allah is the Light of the heavens and the earth.”</p>
+        <p class="ayah-ref">Surah An-Nur 24:35</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0">
+    <div class="container">
+      <div class="section-title">
+        <h2>Explore</h2>
+        <div class="ornament"></div>
+        <p>Everything you need for daily remembrance and learning.</p>
+      </div>
+      <div class="grid-3">
+        <a class="card" href="quran.html">
+          <div class="icon-circle">ق</div>
+          <h3>The Holy Quran</h3>
+          <p>Browse all 114 surahs with Arabic text and English translation.</p>
+        </a>
+        <a class="card" href="prayer.html">
+          <div class="icon-circle">ص</div>
+          <h3>Prayer Times</h3>
+          <p>Accurate salah times for your city, with the next prayer highlighted.</p>
+        </a>
+        <a class="card" href="hadith.html">
+          <div class="icon-circle">ح</div>
+          <h3>Hadith</h3>
+          <p>Selected sayings of Prophet Muhammad ﷺ from authentic collections.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0">
+    <div class="container">
+      <div class="section-title">
+        <h2>The Five Pillars</h2>
+        <div class="ornament"></div>
+      </div>
+      <div class="grid-5">
+        <div class="card"><h3>Shahadah</h3><p>Declaration of faith in Allah and His Messenger ﷺ.</p></div>
+        <div class="card"><h3>Salah</h3><p>Five daily prayers that keep the heart connected to Allah.</p></div>
+        <div class="card"><h3>Zakat</h3><p>Giving a share of wealth to those in need.</p></div>
+        <div class="card"><h3>Sawm</h3><p>Fasting in Ramadan to grow taqwa and gratitude.</p></div>
+        <div class="card"><h3>Hajj</h3><p>Pilgrimage to Makkah for those who are able.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>وَقُل رَّبِّ زِدْنِي عِلْمًا — “My Lord, increase me in knowledge.”</p>
+      <p style="margin-top: 0.5rem">Noor Islamic Website · Built for learning and remembrance</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
