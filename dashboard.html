@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard &mdash; Noor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body class="pattern" data-page="dashboard">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">&#1606;</div>
+        <div class="logo-text">
+          <strong>Noor</strong>
+          <span>Light of Guidance</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="quran.html" data-page="quran">Quran</a>
+        <a href="prayer.html" data-page="prayer">Prayer Times</a>
+        <a href="hadith.html" data-page="hadith">Hadith</a>
+        <a href="about.html" data-page="about">About Islam</a>
+        <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="bismillah">&#1604;&#1608;&#1581;&#1577; &#1575;&#1604;&#1578;&#1581;&#1603;&#1605;</p>
+      <h1>My Dashboard</h1>
+      <p>Track your daily prayers, Quran reading and dhikr in one calm place.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="card">
+        <div class="toolbar">
+          <input id="d-city" type="text" placeholder="City" value="Karachi" />
+          <input id="d-country" type="text" placeholder="Country" value="Pakistan" />
+          <button class="btn btn-gold" id="d-load" type="button">Update city</button>
+        </div>
+        <p class="status" id="d-status">Loading prayer times...</p>
+      </div>
+
+      <div class="dash-stats">
+        <div class="card stat"><span class="k">Next prayer</span><strong class="v" id="s-next">-</strong><span class="s" id="s-count">-</span></div>
+        <div class="card stat"><span class="k">Hijri date</span><strong class="v" id="s-hijri">-</strong><span class="s" id="s-greg"></span></div>
+        <div class="card stat"><span class="k">Prayers today</span><strong class="v" id="s-prayers">0 / 5</strong><span class="s">Mark each one when done</span></div>
+        <div class="card stat"><span class="k">Ayahs today</span><strong class="v" id="s-ayahs">0</strong><span class="s" id="s-goal"></span></div>
+      </div>
+
+      <div class="dash-row">
+        <article class="card">
+          <h3>Today's prayers</h3>
+          <div id="d-prayers"></div>
+        </article>
+        <article class="card">
+          <h3>Last 7 days</h3>
+          <div class="bars" id="d-bars"></div>
+          <p class="muted">Prayers completed each day</p>
+        </article>
+      </div>
+
+      <div class="dash-row">
+        <article class="card">
+          <h3>Quran reading</h3>
+          <p class="muted">Add the ayahs you read today and set a daily goal.</p>
+          <div class="progress"><div id="q-bar"></div></div>
+          <div class="btn-row">
+            <button class="btn btn-gold" data-ayah="1" type="button">+1</button>
+            <button class="btn btn-gold" data-ayah="5" type="button">+5</button>
+            <button class="btn btn-gold" data-ayah="10" type="button">+10</button>
+            <button class="btn btn-outline dash-ghost" data-ayah="-1" type="button">-1</button>
+          </div>
+          <div class="toolbar" style="margin-top: 1rem">
+            <label class="muted" for="q-goal">Daily goal (ayahs)</label>
+            <input id="q-goal" type="number" min="1" value="10" />
+          </div>
+          <a class="btn btn-outline dash-ghost" href="quran.html">Open the Quran</a>
+        </article>
+
+        <article class="card tasbih">
+          <h3>Tasbih counter</h3>
+          <p class="muted">Tap to count. Resets when you reach your target.</p>
+          <button class="tasbih-btn" id="t-tap" type="button"><span id="t-count">0</span></button>
+          <div class="toolbar">
+            <select id="t-target">
+              <option value="33">33</option><option value="99">99</option><option value="100">100</option>
+            </select>
+            <button class="btn btn-outline dash-ghost" id="t-reset" type="button">Reset</button>
+          </div>
+          <p class="status" id="t-total"></p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Your progress is saved privately in this browser only. May Allah accept your deeds.</p>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
